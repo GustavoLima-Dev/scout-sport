@@ -1,3 +1,5 @@
+<div class="metade">
+
 <form class="login" [formGroup]="formLogin">
 
   <mat-form-field class="example-full-width" appearance="fill">
@@ -5,16 +7,18 @@
     <input
      matInput
      placeholder="Emanoel@gmail.com"
-     formControlName="email">
+     formControlName="email"
+     required>
   </mat-form-field>
 
 
   <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>nome</mat-label>
+    <mat-label>Nome de usuario</mat-label>
     <input
      matInput
      placeholder="Emanoel"
-     formControlName="nome">
+     formControlName="nome"
+     required>
   </mat-form-field>
 
   <mat-form-field class="example-full-width" appearance="fill">
@@ -22,7 +26,10 @@
     <input
      type="password"
      matInput
-     formControlName="nome">
+     formControlName="nome"
+     required>
   </mat-form-field>
 
 </form>
+
+</div>
