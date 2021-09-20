@@ -2,7 +2,7 @@
 
 <form class="login" [formGroup]="formLogin">
 
-  <mat-form-field class="example-full-width" appearance="fill">
+  <mat-form-field class="example-full-width">
     <mat-label>E-mail</mat-label>
     <input
      matInput
@@ -12,16 +12,17 @@
   </mat-form-field>
 
 
-  <mat-form-field class="example-full-width" appearance="fill">
+  <mat-form-field class="example-full-width">
     <mat-label>Nome de usuario</mat-label>
     <input
      matInput
+     ngModel
      placeholder="Emanoel"
      formControlName="nome"
      required>
   </mat-form-field>
 
-  <mat-form-field class="example-full-width" appearance="fill">
+  <mat-form-field class="example-full-width">
     <mat-label>Senha</mat-label>
     <input
      type="password"
