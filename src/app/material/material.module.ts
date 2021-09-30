@@ -43,15 +43,11 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MdbIconComponent } from 'angular-bootstrap-md';
 
 
 
 @NgModule({
   exports: [
-    MdbIconComponent,
     A11yModule,
     ClipboardModule,
     CdkStepperModule,
@@ -98,9 +94,6 @@ import { MdbIconComponent } from 'angular-bootstrap-md';
     ScrollingModule,
     FlexLayoutModule,
     MatCardModule,
-    ReactiveFormsModule,
-    FormsModule,
-    MatFormFieldModule,
   ]
 })
 export class MaterialModule { }

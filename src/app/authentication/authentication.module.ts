@@ -1,9 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MdbIconComponent } from 'angular-bootstrap-md';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from 'src/app/material/material.module';
-import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { LoginComponent } from './login/login.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    BrowserModule
+    BrowserModule,
   ]
 })
 export class AuthenticationModule { }
