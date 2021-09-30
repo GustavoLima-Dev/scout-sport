@@ -1,3 +1,4 @@
+import { LoginComponent } from './authentication/login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -13,12 +14,10 @@ export const routes: Routes = [
         path: '',
         component: HomeComponent,
       },
+
       {
         path: 'login',
-        loadChildren: () =>
-          import('./authentication/login/login.component').then(
-            (m) => m.LoginComponent
-          ),
+        component: LoginComponent
       },
     ],
   },
