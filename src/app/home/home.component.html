@@ -1,10 +1,17 @@
-<div class="background">
-  <div class="btns">
-    <button mat-raised-button class="btn_login" routerLink="login">
-      Faça seu login 
+<div class="background" fxLayout="column" fxLayoutAlign="center center">
+  <img class="imagem" src="https://i.postimg.cc/ncbMGNvk/scout-sport.png" />
+  <div class="btns" fxLayout="column" fxLayoutAlign="center center">
+    <button mat-raised-button class="botoes btn_login" routerLink="login">
+      <mat-icon class="material-icons-outlined">
+        person_outline
+        </mat-icon>
+      Faça seu login clicando aqui!
     </button>
 
-    <button mat-raised-button class="btn_cadastrar">
+    <button mat-raised-button class="botoes btn_cadastrar">
+      <mat-icon class="material-icons-outlined">
+        person_add
+      </mat-icon>
       Faça seu cadastro se ainda não possui um!
     </button>
   </div>

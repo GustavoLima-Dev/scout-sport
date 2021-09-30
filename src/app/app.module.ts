@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, HomeComponent],
@@ -25,7 +26,8 @@ import { HomeComponent } from './home/home.component';
     MaterialModule,
     NgbModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent, MdbIconComponent],
