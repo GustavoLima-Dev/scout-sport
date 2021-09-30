@@ -45,11 +45,13 @@ import {OverlayModule} from '@angular/cdk/overlay';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MdbIconComponent } from 'angular-bootstrap-md';
 
 
 
 @NgModule({
   exports: [
+    MdbIconComponent,
     A11yModule,
     ClipboardModule,
     CdkStepperModule,
