@@ -1,36 +1,38 @@
-<div class="metade">
+<div fxLayout="row" class="elementos">
+  <div class="metade">
+    <img src="https://i.postimg.cc/ncbMGNvk/scout-sport.png" />
 
-<form class="login" [formGroup]="formLogin">
+    <form class="login" [formGroup]="formLogin">
+      <mat-form-field class="example-full-width">
+        <mat-label>E-mail</mat-label>
+        <input
+          matInput
+          placeholder="Emanoel@gmail.com"
+          formControlName="email"
+          required
+        />
+      </mat-form-field>
 
-  <mat-form-field class="example-full-width">
-    <mat-label>E-mail</mat-label>
-    <input
-     matInput
-     placeholder="Emanoel@gmail.com"
-     formControlName="email"
-     required>
-  </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Nome de usuario</mat-label>
+        <input
+          matInput
+          ngModel
+          placeholder="Emanoel"
+          formControlName="nome"
+          required
+        />
+      </mat-form-field>
 
+      <mat-form-field class="example-full-width">
+        <mat-label>Senha</mat-label>
+        <input type="password" matInput formControlName="nome" required />
+      </mat-form-field>
+    </form>
+  </div>
 
-  <mat-form-field class="example-full-width">
-    <mat-label>Nome de usuario</mat-label>
-    <input
-     matInput
-     ngModel
-     placeholder="Emanoel"
-     formControlName="nome"
-     required>
-  </mat-form-field>
-
-  <mat-form-field class="example-full-width">
-    <mat-label>Senha</mat-label>
-    <input
-     type="password"
-     matInput
-     formControlName="nome"
-     required>
-  </mat-form-field>
-
-</form>
-
+  <img
+    src="https://i.postimg.cc/5yy9mY1Y/scout-sport-bola.png"
+    class="img_bola"
+  />
 </div>
