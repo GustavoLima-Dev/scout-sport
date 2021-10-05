@@ -1,3 +1,4 @@
+import { CadastroComponent } from './authentication/cadastro/cadastro.component';
 import { MdbIconComponent } from 'angular-bootstrap-md';
 import { LoginComponent } from './authentication/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -15,7 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, HomeComponent],
+  declarations: [AppComponent, LoginComponent, HomeComponent, CadastroComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

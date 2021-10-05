@@ -1,3 +1,4 @@
+import { CadastroComponent } from './authentication/cadastro/cadastro.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -18,6 +19,11 @@ export const routes: Routes = [
       {
         path: 'login',
         component: LoginComponent
+      },
+
+        {
+        path: 'cadastro',
+        component: CadastroComponent
       },
     ],
   },
