@@ -37,6 +37,15 @@
   display: inline-block;
 }
 
+.botoes{
+  background-color: #000;
+  color: #fff;
+  width: 70%;
+  height: 7%;
+  margin: 4%;
+  border: 10px #fff !important;
+}
+
 
 ::ng-deep .mat-form-field .mat-input-element {
   color: #EDE7E7;
