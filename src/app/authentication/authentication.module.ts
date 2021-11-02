@@ -7,6 +7,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { MenuCadastroComponent } from './cadastro/menu-cadastro/menu-cadastro.component';
 import { CadastroImagemComponent } from './cadastro/menu-cadastro/components/cadastro-imagem/cadastro-imagem.component';
 import { CadastrodescricaoComponent } from './cadastro/menu-cadastro/components/cadastrodescricao/cadastrodescricao.component';
+import { CadastroDescricaoComponent } from './cadastro/menu-cadastro/components/cadastro-descricao/cadastro-descricao.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CadastrodescricaoComponent } from './cadastro/menu-cadastro/components/
   declarations: [
      MenuCadastroComponent,
      CadastroImagemComponent,
-     CadastrodescricaoComponent
+     CadastrodescricaoComponent,
+     CadastroDescricaoComponent
 
   ],
 })
