@@ -26,18 +26,26 @@
 
       <mat-form-field class="example-full-width">
         <mat-label>Senha</mat-label>
-        <input type="password" matInput formControlName="nome" required />
+        <input type="password" matInput formControlName="senha" required />
       </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Confirmar senha</mat-label>
+        <input type="password" matInput formControlName="confirmarSenha" required />
+      </mat-form-field>
+
+      <button mat-raised-button class="botoes btn_cadastrar"  routerLink="menuCadastro">
+        <mat-icon class="material-icons-outlined">
+          person_add
+        </mat-icon>
+        Confirmar
+      </button>
     </form>
   </div>
   <div>
     <img
       src="https://i.postimg.cc/5yy9mY1Y/scout-sport-bola.png"
       class="img_bola"
-    />
-    <img
-      src="https://i.postimg.cc/9QDtKq5x/scout-sport-burrom.png"
-      class="img_button"
     />
   </div>
 </div>

@@ -11,7 +11,8 @@ export class CadastroComponent implements OnInit {
   formCadastro = new FormGroup({
     email: new FormControl,
     nome: new FormControl,
-    senha: new FormControl
+    senha: new FormControl,
+    confirmarSenha: new FormControl
   });
 
 
