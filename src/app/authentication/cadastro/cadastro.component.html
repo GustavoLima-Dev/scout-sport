@@ -1,8 +1,10 @@
+<router-outlet></router-outlet>
+
 <div fxLayout="row" class="elementos">
   <div class="metade">
     <img src="https://i.postimg.cc/ncbMGNvk/scout-sport.png" />
 
-    <form class="login" [formGroup]="formCadastro">
+    <form class="login" [formGroup]="formCadastro" (ngSubmit)="salvarUsuario()" >
       <mat-form-field class="example-full-width">
         <mat-label>E-mail</mat-label>
         <input
@@ -17,7 +19,6 @@
         <mat-label>Nome de usuario</mat-label>
         <input
           matInput
-          ngModel
           placeholder="Emanoel"
           formControlName="nome"
           required
@@ -31,13 +32,20 @@
 
       <mat-form-field class="example-full-width">
         <mat-label>Confirmar senha</mat-label>
-        <input type="password" matInput formControlName="confirmarSenha" required />
+        <input
+          type="password"
+          matInput
+          required
+        />
       </mat-form-field>
 
-      <button mat-raised-button class="botoes btn_cadastrar"  routerLink="menuCadastro">
-        <mat-icon class="material-icons-outlined">
-          person_add
-        </mat-icon>
+      <button
+        mat-raised-button
+        class="botoes btn_cadastrar"
+        (click)="salvarUsuario()"
+        routerLink="menuCadastro"
+      >
+        <mat-icon class="material-icons-outlined"> person_add </mat-icon>
         Confirmar
       </button>
     </form>
@@ -49,4 +57,3 @@
     />
   </div>
 </div>
-

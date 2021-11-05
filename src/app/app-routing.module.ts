@@ -24,11 +24,11 @@ export const routes: Routes = [
 
       {
         path: 'cadastro',
-        component: CadastroComponent
+        component: CadastroComponent,
       },
 
       {
-        path: 'cadastro/menuCadastro',
+        path: 'menuCadastro',
         component: MenuCadastroComponent
       }
     ],
