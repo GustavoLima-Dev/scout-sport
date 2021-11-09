@@ -10,6 +10,7 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./cadastro.component.scss'],
 })
 export class CadastroComponent implements OnInit {
+
   formCadastro = new FormGroup({
     email: new FormControl(),
     nome: new FormControl(),

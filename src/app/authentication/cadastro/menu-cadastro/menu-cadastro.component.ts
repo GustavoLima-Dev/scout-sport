@@ -19,10 +19,18 @@ export class MenuCadastroComponent implements OnInit {
   }
 
   cadastroImagem(){
-    this.dialogService.open(CadastroImagemComponent)
+    this.dialogService.open(CadastroImagemComponent,
+    {
+      width: '900px',
+      height: '1000px'
+    })
   }
 
   cadastroDescricao(){
-    this.dialogService.open(CadastroDescricaoComponent)
+    this.dialogService.open(CadastroDescricaoComponent,
+    {
+      width: '900px',
+      height: '1000px'
+    })
   }
 }

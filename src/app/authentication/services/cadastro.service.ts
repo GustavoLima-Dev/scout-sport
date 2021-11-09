@@ -11,7 +11,6 @@ export class CadastroService {
   constructor(private http: HttpClient) { }
 
   enviarDadosLogin(dados:any): any{
-
-    this.http.post(this.API, dados)
+    this.http.post<string>(this.API, dados)
   }
 }

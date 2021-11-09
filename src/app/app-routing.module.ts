@@ -28,7 +28,7 @@ export const routes: Routes = [
       },
 
       {
-        path: 'menuCadastro',
+        path: 'cadastro/menuCadastro',
         component: MenuCadastroComponent
       }
     ],

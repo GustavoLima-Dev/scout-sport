@@ -9,7 +9,6 @@
         <mat-label>E-mail</mat-label>
         <input
           matInput
-          placeholder="Emanoel@gmail.com"
           formControlName="email"
           required
         />
@@ -19,7 +18,6 @@
         <mat-label>Nome de usuario</mat-label>
         <input
           matInput
-          placeholder="Emanoel"
           formControlName="nome"
           required
         />
@@ -29,7 +27,7 @@
         <mat-label>Senha</mat-label>
         <input type="password" matInput formControlName="senha" required />
       </mat-form-field>
-
+<!-- 
       <mat-form-field class="example-full-width">
         <mat-label>Confirmar senha</mat-label>
         <input
@@ -37,12 +35,11 @@
           matInput
           required
         />
-      </mat-form-field>
+      </mat-form-field> -->
 
       <button
         mat-raised-button
         class="botoes btn_cadastrar"
-        (click)="salvarUsuario()"
         routerLink="menuCadastro"
       >
         <mat-icon class="material-icons-outlined"> person_add </mat-icon>
