@@ -15,6 +15,7 @@ export class CadastroComponent implements OnInit {
     email: new FormControl(),
     nome: new FormControl(),
     senha: new FormControl(),
+    validarSenha: new FormControl()
   });
 
   constructor(
@@ -27,7 +28,7 @@ export class CadastroComponent implements OnInit {
   salvarUsuario(): any {
     this.cadastroService
       .enviarDadosLogin(this.formCadastro.value)
-      .subscribe((responce: any) => {
+      .subscribe((response: any) => {
         this.snackbar.openSuccess('Usuario cadastrado')
         this.router.navigate(['menuCadastro'])
       });

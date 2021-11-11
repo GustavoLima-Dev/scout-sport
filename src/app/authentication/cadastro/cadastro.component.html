@@ -27,7 +27,7 @@
         <mat-label>Senha</mat-label>
         <input type="password" matInput formControlName="senha" required />
       </mat-form-field>
-<!-- 
+<!--
       <mat-form-field class="example-full-width">
         <mat-label>Confirmar senha</mat-label>
         <input
@@ -41,6 +41,7 @@
         mat-raised-button
         class="botoes btn_cadastrar"
         routerLink="menuCadastro"
+        (click)="salvarUsuario()"
       >
         <mat-icon class="material-icons-outlined"> person_add </mat-icon>
         Confirmar
