@@ -7,11 +7,7 @@
   height: 100px;
 }
 
-.img_bola{
-  margin-left: 29%;
-  height: 400px;
-  width: 300px;
-}
+
 
 .div_img{
   display: flex;
@@ -22,14 +18,24 @@
   width: 50%;
   height: 550px;
   border-radius: 20px;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .mensagem{
   background-color: #fff;
   border-radius: 50px;
-  width: 500px;
-  height: 20px;
-  text-align: center;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  margin-top: 5%;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1%;
+  font-size: 10px;
 }
 
 
