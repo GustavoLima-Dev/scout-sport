@@ -28,7 +28,7 @@ import { MatIconModule } from '@angular/material/icon';
     NgbModule,
     ReactiveFormsModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent, MdbIconComponent],
