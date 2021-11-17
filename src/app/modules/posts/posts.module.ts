@@ -7,12 +7,16 @@ import { ListPostsComponent } from './pages/list-posts/list-posts.component';
 import { PostsRoutingModule } from './posts-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { ListarPostsComponent } from './pages/listar-posts/listar-posts.component';
+import { CriarPostsComponent } from './pages/criar-posts/criar-posts.component';
 
 
 @NgModule({
   declarations: [
     ListPostsComponent,
-    CardsPostsComponent
+    CardsPostsComponent,
+    ListarPostsComponent,
+    CriarPostsComponent
   ],
   imports: [
     CommonModule,
