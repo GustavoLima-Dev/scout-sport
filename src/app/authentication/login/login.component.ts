@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
+import { SnackbarService } from 'src/app/shared/services/snackbar.service';
 
 @Component({
   selector: 'app-login',
@@ -13,9 +15,17 @@ export class LoginComponent implements OnInit {
     senha: new FormControl
   });
 
-  constructor() { }
+  constructor(
+    private snackbar: SnackbarService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  logar(){
+    this.formLogin.value;
+    this.router.navigate(['listarPosts']);
   }
 
 }

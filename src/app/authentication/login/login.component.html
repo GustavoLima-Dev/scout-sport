@@ -2,7 +2,7 @@
   <div class="metade">
     <img src="https://i.postimg.cc/ncbMGNvk/scout-sport.png" />
 
-    <form class="login" [formGroup]="formLogin">
+    <form class="login" [formGroup]="formLogin" (ngSubmit)="logar()" >
 
       <mat-form-field class="example-full-width">
         <mat-label>Nome de usuario</mat-label>
@@ -21,7 +21,7 @@
       </mat-form-field>
     </form>
 
-  
+
 
   </div>
   <div>
