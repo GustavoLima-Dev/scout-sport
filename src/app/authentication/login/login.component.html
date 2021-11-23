@@ -19,6 +19,16 @@
         <mat-label>Senha</mat-label>
         <input type="password" matInput formControlName="nome" required />
       </mat-form-field>
+
+      <button
+      mat-raised-button
+      class="botoes btn_cadastrar"
+      routerLink="menuCadastro"
+      (click)="logar()"
+    >
+      <mat-icon class="material-icons-outlined"> fast_forward </mat-icon>
+      Confirmar
+    </button>
     </form>
 
 
